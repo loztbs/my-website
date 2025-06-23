@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Fitness voor Beginners</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #000000;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        nav a:hover {
+			color: #FFC300;
+            transform: scale(1);
+            transition: all 0.3s ease;
+        }
+
+        .menu-item {
+            position: static;
+        }
+
+        .mega-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100vw;
+            background-color: #f8f6f2;
+            color: #000;
+            padding: 0 60px;
+            display: flex;
+            gap: 60px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease, padding 0.3s ease;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item:hover .mega-menu {
+            max-height: 500px;
+            padding: 30px 60px;
+        }
+
+        .mega-column {
+            flex: 1;
+            min-width: 220px;
+        }
+
+        .mega-column h4 {
+            margin-top: 0;
+            font-size: 18px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .mega-column a {
+            color: #333;
+            text-decoration: none;
+            display: block;
+            margin: 8px 0;
+            padding: 4px 0;
+            transition: color 0.2s ease;
+        }
+
+        .mega-column a:hover {
+            color: #007bff;
+        }
+
+        nav::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .button {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fitness voor Beginners</h1>
+    <p>Alles wat je moet weten om goed te starten!</p>
+</header>
+
+<nav>
+    <div class="menu-item">
+        <a class="button" href="index.html">Home</a>
+    </div>
+    <div class="menu-item">
+        <a href="Trainingsschema.html">Trainingsschema</a>
+        <div class="mega-menu">
+            <div class="mega-column"><h4>Beginners</h4><a href="#">Full body</a><a href="#">Push/Pull/Legs</a><a href="#">Upper/Lower</a><a href="#">Machine only</a></div>
+            <div class="mega-column"><h4>Split</h4><a href="#">Bro split</a><a href="#">5x5</a><a href="#">German Volume</a><a href="#">Arnold Split</a></div>
+            <div class="mega-column"><h4>Trainen</h4><a href="#">Opwarmen</a><a href="#">Cooldown</a><a href="#">Techniek</a><a href="#">Progressie</a></div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <a href="Voeding.html">Voeding</a>
+        <div class="mega-menu">
+            <div class="mega-column"><h4>Eetschema</h4><a href="#">Ontbijt</a><a href="#">Lunch</a><a href="#">Diner</a><a href="#">Snacks</a></div>
+            <div class="mega-column"><h4>Doelen</h4><a href="#">Bulken</a><a href="#">Cutten</a><a href="#">Droogtrainen</a><a href="#">Onderhouden</a></div>
+            <div class="mega-column"><h4>Tips</h4><a href="#">Hydratatie</a><a href="#">Meal prep</a><a href="#">Goedkoop eten</a><a href="#">Voedingsmythes</a></div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <a href="Supplementen.html">Supplementen</a>
+        <div class="mega-menu">
+            <div class="mega-column"><h4>Basics</h4><a href="#">Whey</a><a href="#">Creatine</a><a href="#">Multivitamine</a><a href="#">Omega 3</a></div>
+            <div class="mega-column"><h4>Geavanceerd</h4><a href="#">Pre-workout</a><a href="#">BCAA</a><a href="#">ZMA</a><a href="#">Beta-alanine</a></div>
+            <div class="mega-column"><h4>Doelen</h4><a href="#">Spiergroei</a><a href="#">Herstel</a><a href="#">Energie</a><a href="#">Focus</a></div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <a href="Motivatie.html">Motivatie</a>
+        <div class="mega-menu">
+            <div class="mega-column"><h4>Tips</h4><a href="#">Doelen stellen</a><a href="#">Discipline</a><a href="#">Geen zin?</a><a href="#">Gym buddy</a></div>
+            <div class="mega-column"><h4>Quotes</h4><a href="#">Arnold</a><a href="#">Dwayne Johnson</a><a href="#">Zyzz</a><a href="#">David Goggins</a></div>
+            <div class="mega-column"><h4>Technieken</h4><a href="#">Visualisatie</a><a href="#">Muziek</a><a href="#">Progressie meten</a><a href="#">Beloningen</a></div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <a href="FAQ.html">FAQ</a>
+        <div class="mega-menu">
+            <div class="mega-column"><h4>Algemeen</h4><a href="#">Hoe vaak trainen?</a><a href="#">Wat eten?</a><a href="#">Welke supplementen?</a><a href="#">Beginner fouten</a></div>
+            <div class="mega-column"><h4>Trainen</h4><a href="#">Sets & Reps</a><a href="#">Rusttijden</a><a href="#">Cardio combineren</a><a href="#">Plateaus</a></div>
+            <div class="mega-column"><h4>Gezondheid</h4><a href="#">Slaap</a><a href="#">Blessures</a><a href="#">Vochtbalans</a><a href="#">Stress</a></div>
+        </div>
+    </div>
+</nav>
+
+<main style="margin-left: 10px;">
+    <h2>Welkom bij jouw fitness startpunt!</h2>
+    <p>Ben je net begonnen met trainen of wil je beginnen? Dan zit je hier goed. Op deze website vind je handige tips over training, voeding, supplementen en hoe je gemotiveerd blijft!</p>
+</main>
+
+</body>
+</html>
