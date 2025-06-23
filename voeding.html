@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Voeding</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            padding: 5px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+
+        nav a:hover {
+		background-color: #666;
+		transform: scale(1.15);
+		transition: all 0.5s ease;
+		}
+
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        /* Clear floats */
+        nav::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+		
+		.button {
+		color: #007bff;
+		}
+		
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Voeding</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="trainingsschema.html">Trainingsschema</a>
+    <a class="button" href="voeding.html">Voeding</a>
+    <a href="supplementen.html">Supplementen</a>
+    <a href="motivatie.html">Motivatie</a>
+    <a href="faq.html">FAQ</a>
+</nav>
+
+<main style = "margin-left: 10px;">
+    <h2>.</h2>
+    <p>Ben je net begonnen met trainen of wil je beginnen? Dan zit je hier goed. Op deze website vind je handige tips over training, voeding, supplementen en hoe je gemotiveerd blijft!</p>
+</main>
+
+</body>
+</html>
